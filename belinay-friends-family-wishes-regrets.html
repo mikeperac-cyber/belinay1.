@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A speaking-first B1–B1+ ESL lesson about friends, family, wishes, regrets, and repairing trust.">
+  <title>Friends, Family &amp; The Secret That Got Out — ESL Lesson</title>
+  <style>
+    :root{
+      --paper:#fffefb;
+      --white:#fff;
+      --ink:#0c2355;
+      --muted:#52617b;
+      --coral:#ff554d;
+      --coral-dark:#d83b37;
+      --coral-soft:#fff0ed;
+      --blue:#1f65d6;
+      --blue-soft:#eaf4ff;
+      --lav:#745ac8;
+      --lav-soft:#f0ebff;
+      --mint:#087d71;
+      --mint-soft:#e1f6f1;
+      --gold:#9a6410;
+      --gold-soft:#fff4cf;
+      --rule:#d7e5f3;
+      --line:#cbd9e7;
+      --shadow:0 16px 38px rgba(12,35,85,.10);
+      --serif:Georgia,"Times New Roman",serif;
+      --sans:"Segoe UI",Inter,system-ui,-apple-system,Arial,sans-serif;
+      --hand:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}
+    button,input,select,textarea{font:inherit}
+    button{color:inherit}
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+    .skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:#fff;padding:10px 14px;z-index:1000}
+    .skip:focus{left:8px}
+    .wrap{width:min(var(--max),calc(100% - 36px));margin-inline:auto}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,254,251,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    .toprow{min-height:72px;display:flex;align-items:center;gap:30px}
+    .brand{font:700 1.25rem var(--serif);text-decoration:none;white-space:nowrap}
+    .lesson-nav{display:flex;align-items:center;justify-content:center;gap:4px;flex:1}
+    .lesson-nav a{position:relative;text-decoration:none;font-weight:700;font-size:.9rem;padding:23px 16px 20px}
+    .lesson-nav a:hover,.lesson-nav a.active{color:var(--coral-dark)}
+    .lesson-nav a.active::after{content:"";position:absolute;height:3px;left:13px;right:13px;bottom:0;background:var(--coral)}
+    .utility{display:flex;gap:8px}
+    .icon-btn{width:42px;height:42px;border:1px solid var(--line);border-radius:10px;background:var(--white);display:grid;place-items:center;cursor:pointer}
+    .icon-btn:hover{background:var(--blue-soft)}
+    .progress-track{height:3px;background:#e8eef5}
+    .progress-fill{height:100%;width:0;background:var(--coral);transition:width .3s}
+
+    .hero{border-bottom:1px solid var(--line);overflow:hidden}
+    .hero-grid{min-height:550px;display:grid;grid-template-columns:1.04fr .96fr;align-items:center}
+    .hero-copy{padding:68px 54px 70px 0;position:relative}
+    .hero-copy::after{content:"";position:absolute;right:0;top:48px;bottom:48px;border-right:1px dashed var(--line)}
+    h1,h2,h3{font-family:var(--serif);line-height:1.08;margin-top:0}
+    h1{font-size:clamp(3rem,5.35vw,4.82rem);letter-spacing:-.045em;margin-bottom:26px;max-width:650px}
+    h1 .under{position:relative;display:inline-block}
+    h1 .under::after{content:"";position:absolute;left:-4px;right:0;bottom:-7px;height:6px;background:var(--coral);border-radius:50%;transform:rotate(-1deg)}
+    .hero-copy>p{font-size:1.2rem;max-width:460px;margin:0 0 28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .btn{border:0;border-radius:8px;padding:12px 18px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;transition:.18s transform,.18s background,.18s color}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 20px rgba(255,85,77,.22)}
+    .btn-primary:hover{background:var(--coral-dark)}
+    .btn-secondary{background:var(--white);border:1px solid var(--line);color:var(--ink)}
+    .btn-secondary:hover{background:var(--blue-soft);border-color:#9fc0e5}
+    .btn-small{padding:8px 12px;font-size:.84rem}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:7px 18px;margin-top:22px;font-size:.86rem;color:var(--muted);font-weight:650}
+    .hero-art{padding:28px 0 28px 38px}
+    .hero-art img{width:100%;border-radius:4px;mix-blend-mode:multiply}
+
+    main{overflow:hidden}
+    section{padding:76px 0;border-bottom:1px solid var(--line)}
+    section:nth-of-type(even){background-color:#fbfdff}
+    .lined{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 42px,rgba(105,157,211,.08) 43px)}
+    .sec-layout{display:grid;grid-template-columns:300px 1fr;gap:70px}
+    .sec-side{position:relative}
+    .sec-side h2{font-size:clamp(2rem,3.7vw,3.25rem);letter-spacing:-.025em;margin-bottom:16px}
+    .sec-side p{color:var(--muted);margin:0 0 18px}
+    .sec-no{font:700 1.35rem var(--hand);color:var(--coral);margin-bottom:7px}
+    .scribble{font-family:var(--hand);color:var(--lav);font-size:.92rem;transform:rotate(-1deg);display:inline-block}
+    .safe-note{align-self:start;border-left:4px solid var(--lav);background:var(--lav-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:.87rem;color:#42357b;margin-top:22px}
+    .complete-btn{margin-top:20px}
+    .complete-btn.done{background:var(--mint-soft);border-color:#83cabf;color:var(--mint)}
+    .complete-btn.done::before{content:"✓ "}
+
+    .prompt-list{counter-reset:prompt}
+    .prompt-row{width:100%;border:0;border-bottom:1px solid #a9c2df;background:transparent;text-align:left;padding:17px 45px 17px 63px;min-height:66px;position:relative;cursor:pointer}
+    .prompt-row::before{counter-increment:prompt;content:counter(prompt);position:absolute;left:4px;top:12px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--coral);color:#fff;font:700 1.35rem var(--serif)}
+    .prompt-row::after{content:"+";position:absolute;right:8px;top:15px;font-size:1.4rem}
+    .prompt-row.open::after{content:"−"}
+    .prompt-row strong{font-size:1rem}
+    .prompt-row .hint{display:none;color:var(--muted);font-size:.88rem;margin-top:8px}
+    .prompt-row.open .hint{display:block}
+    .scenario-box{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;background:var(--gold-soft);border-left:5px solid #e4b946;padding:18px 20px;margin-top:26px}
+    .scenario-box p{margin:4px 0 0}
+    .scenario-label{text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-size:.72rem;font-weight:900}
+
+    .vocab-toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:16px}
+    .vocab-toolbar p{margin:0;color:var(--muted)}
+    .vocab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .vcard{min-height:142px;border:1px solid var(--line);background:var(--white);text-align:left;padding:18px;border-radius:6px;cursor:pointer;position:relative;box-shadow:0 6px 14px rgba(12,35,85,.04)}
+    .vcard:hover{border-color:#8eacd0}
+    .vcard .word{font-family:var(--serif);font-size:1.2rem;font-weight:700}
+    .vcard .pos{text-transform:uppercase;letter-spacing:.08em;color:var(--coral-dark);font-size:.68rem;font-weight:900}
+    .vcard .meaning{display:none;margin-top:9px;color:var(--muted);font-size:.86rem}
+    .vcard.open{background:var(--lav-soft);border-color:#b5a4e6}
+    .vcard.open .meaning{display:block}
+    .vcard::after{content:"tap";position:absolute;right:12px;bottom:9px;font:700 .7rem var(--hand);color:var(--lav)}
+    .vcard.open::after{content:"close"}
+
+    .story-layout{display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:start}
+    #story .sec-layout{grid-template-columns:1fr 1fr;gap:42px;align-items:start}
+    #story .sec-side h2{font-size:2.35rem}
+    #story .sec-side p{max-width:520px}
+    .paper-note{background:var(--white);border:1px solid #dde3ea;box-shadow:var(--shadow);padding:28px 30px;position:relative}
+    .paper-note::after{content:"";position:absolute;right:0;top:0;border-style:solid;border-width:0 0 34px 34px;border-color:transparent transparent #dfe9f4 transparent}
+    .story-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+    .story-tools h3{margin:0;font-size:1.35rem}
+    .chat{display:grid;grid-template-columns:65px 1fr;gap:7px 10px;margin-bottom:18px}
+    .who{font-weight:900;color:var(--blue)}
+    .who.ece{color:var(--coral-dark)}
+    .who.maya{color:var(--lav)}
+    .msg{margin:0}
+    .time{color:#8a95a8;font-size:.74rem;font-weight:500;margin-left:5px}
+    .story-end{font-family:var(--hand);color:var(--blue);text-align:right;margin:22px 5px 0}
+    .quiz h3{font-size:1.35rem}
+    .qitem{margin-bottom:18px}
+    .qitem legend{font-weight:800;margin-bottom:6px}
+    fieldset{border:0;padding:0;margin:0}
+    .choice{display:flex;align-items:flex-start;gap:9px;padding:5px 0;cursor:pointer}
+    .choice input{margin-top:6px;accent-color:var(--blue)}
+    .feedback{min-height:22px;font-size:.85rem;font-weight:800;margin-top:10px}
+    .feedback.ok{color:var(--mint)}
+    .feedback.no{color:var(--coral-dark)}
+
+    .language-rail{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--white);box-shadow:var(--shadow)}
+    .language-lane{padding:25px 22px;min-height:238px}
+    .language-lane+.language-lane{border-left:1px solid var(--line)}
+    .lane-tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;font-weight:900;display:inline-block;padding:5px 8px;background:var(--lav-soft);color:#513d9b}
+    .language-lane:nth-child(2) .lane-tag{background:var(--blue-soft);color:var(--blue)}
+    .language-lane:nth-child(3) .lane-tag{background:var(--coral-soft);color:var(--coral-dark)}
+    .formula{font:700 1.1rem var(--serif);margin:18px 0 12px;border-bottom:2px solid var(--lav);padding-bottom:6px}
+    .language-lane:nth-child(2) .formula{border-color:var(--blue)}
+    .language-lane:nth-child(3) .formula{border-color:var(--coral)}
+    .language-lane p{font-size:.89rem;margin:8px 0}
+    .tr-note{color:var(--muted)!important;font-size:.8rem!important}
+    .practice-sheet{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .practice-item{border-bottom:1px solid #abc4df;padding:13px 4px}
+    .practice-item label{display:block;font-weight:750;margin-bottom:7px}
+    .practice-item select{width:100%;background:var(--white);border:1px solid var(--line);border-radius:6px;padding:9px}
+    .practice-item.correct select{border-color:var(--mint);background:var(--mint-soft)}
+    .practice-item.wrong select{border-color:var(--coral);background:var(--coral-soft)}
+
+    .idiom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .idiom{border-left:5px solid var(--blue);background:var(--blue-soft);padding:16px 18px}
+    .idiom:nth-child(even){border-left-color:var(--lav);background:var(--lav-soft)}
+    .idiom b{font-family:var(--serif);font-size:1.08rem}
+    .idiom span{display:block;color:var(--muted);font-size:.86rem;margin-top:4px}
+    .match-area{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+    .match-col h3{font-size:1.1rem}
+    .match-card{width:100%;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:6px;padding:10px 12px;margin-bottom:8px;cursor:pointer}
+    .match-card.selected{background:var(--gold-soft);border-color:#ddb84b}
+    .match-card.matched{background:var(--mint-soft);border-color:#78c5b7;color:var(--mint);pointer-events:none}
+
+    .role-switch{display:flex;gap:10px;margin-bottom:20px}
+    .role-switch button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .role-stage{display:grid;grid-template-columns:1fr 150px 1fr;gap:24px;align-items:stretch}
+    .role-card{padding:24px;border:1px solid var(--line);background:var(--white);box-shadow:var(--shadow);position:relative}
+    .role-card.active{border:2px solid var(--blue)}
+    .role-card.ece.active{border-color:var(--coral)}
+    .role-card h3{font-size:1.35rem}
+    .role-card ul{padding-left:20px}
+    .role-card li{margin-bottom:8px}
+    .path{display:flex;flex-direction:column;justify-content:space-around;text-align:center}
+    .path-step{position:relative;font-size:.78rem;font-weight:800}
+    .path-step b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;margin:0 auto 5px;background:var(--lav-soft);color:var(--lav)}
+    .role-controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+    .twist,.timer-box{border:1px solid var(--line);background:var(--white);padding:17px}
+    .twist p,.timer-box p{margin:4px 0 12px}
+    .timer-display{font:700 2rem var(--serif);color:var(--ink);min-width:88px;display:inline-block}
+    .useful-strip{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+    .phrase{border:1px dashed #9ab5d5;background:var(--white);border-radius:999px;padding:8px 12px;cursor:pointer;font-size:.84rem}
+    .phrase:hover{background:var(--blue-soft)}
+
+    .dilemma-list{display:grid;gap:10px}
+    .dilemma{display:grid;grid-template-columns:50px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid #abc4df}
+    .dilemma-num{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--coral);color:#fff;font:700 1.2rem var(--serif)}
+    .dilemma p{margin:0}
+    .dilemma select{min-width:190px;border:1px solid var(--line);background:var(--white);padding:8px;border-radius:6px}
+    .debate-box{margin-top:25px;border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr}
+    .debate-side{padding:20px}
+    .debate-side+.debate-side{border-left:1px solid var(--line)}
+    .debate-side h3{font-size:1.12rem}
+    .debate-side ul{padding-left:20px}
+
+    .voice-shell{border:1px solid var(--line);background:var(--white);box-shadow:var(--shadow);padding:24px}
+    .voice-top{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center}
+    .record-btn{width:56px;height:56px;border:1px solid var(--coral);border-radius:50%;background:var(--coral-soft);cursor:pointer;position:relative}
+    .record-btn::after{content:"";position:absolute;width:20px;height:20px;border-radius:50%;background:var(--coral);inset:0;margin:auto}
+    .record-btn.recording::after{border-radius:4px}
+    .record-btn.recording{animation:pulse 1.2s infinite}
+    @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(255,85,77,.13)}}
+    .voice-status{font-weight:800}
+    .wave{height:38px;margin-top:6px;background:repeating-linear-gradient(90deg,transparent 0 5px,var(--blue) 6px 8px,transparent 9px 13px);opacity:.5;clip-path:polygon(0 42%,5% 30%,10% 60%,15% 25%,20% 72%,25% 40%,30% 55%,35% 20%,40% 75%,45% 36%,50% 60%,55% 28%,60% 70%,65% 45%,70% 55%,75% 30%,80% 65%,85% 42%,90% 58%,95% 35%,100% 48%,100% 55%,0 55%)}
+    audio{width:100%;margin-top:15px;display:none}
+    .builder{margin-top:24px;display:grid;gap:13px}
+    .builder label{font-weight:800}
+    .builder select,.builder textarea{width:100%;border:1px solid var(--line);border-radius:6px;padding:10px;background:var(--white)}
+    .builder textarea{min-height:76px;resize:vertical}
+    .preview{background:var(--lav-soft);border-left:5px solid var(--lav);padding:18px;margin-top:16px;min-height:82px}
+    .rubric{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}
+    .rubric label{border:1px solid var(--line);padding:12px;background:var(--white);cursor:pointer;font-size:.82rem}
+    .rubric input{accent-color:var(--mint)}
+    .final-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+    details.answer{max-width:var(--max);width:calc(100% - 36px);margin:54px auto;border:1px solid var(--line);background:var(--white)}
+    details.answer summary{cursor:pointer;padding:17px 20px;font-weight:900}
+    .answer-body{padding:0 20px 20px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .answer-body h3{font-size:1.1rem;margin-bottom:8px}
+    .answer-body p,.answer-body li{font-size:.88rem}
+    footer{background:var(--ink);color:#eaf1ff;padding:36px 0}
+    .footrow{display:flex;justify-content:space-between;gap:24px;align-items:center}
+    .footrow p{margin:0;color:#bfcae0;font-size:.87rem}
+    .done-banner{display:none;position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:100;background:var(--ink);color:#fff;padding:12px 18px;border-radius:8px;box-shadow:var(--shadow)}
+    .done-banner.show{display:block;animation:pop .3s both}
+    @keyframes pop{from{opacity:0;transform:translate(-50%,10px)}}
+    .large-text{font-size:118%}
+
+    @media(max-width:900px){
+      .lesson-nav{justify-content:flex-start;overflow-x:auto}
+      .utility{display:none}
+      .hero-grid{grid-template-columns:1fr}
+      .hero-copy{padding:50px 0 34px}
+      .hero-copy::after{display:none}
+      .hero-art{padding:0 0 34px}
+      .sec-layout{grid-template-columns:1fr;gap:30px}
+      .sec-side{max-width:680px}
+      .story-layout{grid-template-columns:1fr}
+      #story .sec-layout{grid-template-columns:1fr}
+      .role-stage{grid-template-columns:1fr}
+      .path{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;order:3}
+      .role-controls,.debate-box{grid-template-columns:1fr}
+      .debate-side+.debate-side{border-left:0;border-top:1px solid var(--line)}
+      .rubric{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:640px){
+      .wrap{width:min(100% - 24px,var(--max))}
+      .toprow{gap:14px;min-height:64px}
+      .brand{font-size:1rem}
+      .lesson-nav a{padding:20px 11px 17px;font-size:.82rem}
+      h1{font-size:2.85rem}
+      .hero-copy>p{font-size:1.03rem}
+      section{padding:54px 0}
+      .vocab-grid,.language-rail,.practice-sheet,.idiom-grid,.match-area,.role-controls,.answer-body{grid-template-columns:1fr}
+      .language-lane+.language-lane{border-left:0;border-top:1px solid var(--line)}
+      .scenario-box{grid-template-columns:1fr}
+      .dilemma{grid-template-columns:42px 1fr}
+      .dilemma select{grid-column:1/-1;width:100%}
+      .voice-top{grid-template-columns:auto 1fr}
+      .voice-top .btn{grid-column:1/-1}
+      .rubric{grid-template-columns:1fr}
+      .footrow{align-items:flex-start;flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+    @media print{
+      .topbar,.hero-actions,.utility,.complete-btn,.record-btn,.role-controls,.final-actions,.btn,.done-banner{display:none!important}
+      .hero-grid,.sec-layout,.story-layout{display:block}
+      .hero{break-after:page}
+      section{break-inside:avoid;padding:28px 0}
+      body{font-size:11pt}
+      .hero-art{max-width:560px;margin:auto}
+      details.answer{display:block}
+      details.answer .answer-body{display:grid}
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to lesson</a>
+<div class="topbar">
+  <div class="wrap toprow">
+    <a class="brand" href="#top">LBEnglishCo</a>
+    <nav class="lesson-nav" aria-label="Lesson sections">
+      <a href="#story">Story</a>
+      <a href="#language">Language</a>
+      <a href="#practice">Practice</a>
+      <a href="#speak">Speak</a>
+      <a href="#reflect">Reflect</a>
+    </nav>
+    <div class="utility">
+      <button class="icon-btn" id="textSize" aria-label="Toggle large text" title="Large text">A+</button>
+      <button class="icon-btn" onclick="window.print()" aria-label="Print lesson" title="Print">⎙</button>
+    </div>
+  </div>
+  <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Friends, Family &amp; The <span class="under">Secret</span> That Got Out</h1>
+      <p>Speak honestly. Imagine differently. Repair what matters.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#before">Start the story <span aria-hidden="true">→</span></a>
+        <button class="btn btn-secondary" onclick="window.print()">Print lesson</button>
+      </div>
+      <div class="hero-meta">
+        <span>Belinay · B1–B1+</span><span>75–90 minutes</span><span>Speaking-first</span><span>8 missions</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="belinay-friends-family-hero.png" alt="A folded note with examples: I wish I had told the truth earlier; I wish you had trusted me; I regret telling Maya.">
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="before" class="lined" data-mission="1">
+    <div class="wrap sec-layout">
+      <div class="sec-side">
+        <div class="sec-no">1 · Before the secret</div>
+        <h2>Trust begins with a choice.</h2>
+        <p>Open a question, use the sentence starter, and speak for 30 seconds.</p>
+        <div class="safe-note"><strong>Your privacy matters.</strong> You never need to share a real secret. Invent a situation or talk about a film.</div>
+        <button class="btn btn-secondary complete-btn" data-complete="1">Mark mission complete</button>
+      </div>
+      <div>
+        <div class="prompt-list">
+          <button class="prompt-row"><strong>Why do people keep secrets from friends or family?</strong><span class="hint">Start: “People sometimes keep secrets because …”</span></button>
+          <button class="prompt-row"><strong>Is sharing a secret ever the right thing to do?</strong><span class="hint">Start: “It may be right when …; however, …”</span></button>
+          <button class="prompt-row"><strong>What helps rebuild trust after a mistake?</strong><span class="hint">Start: “The first step is … because …”</span></button>
+          <button class="prompt-row"><strong>Who usually gives the best advice: friends or family?</strong><span class="hint">Start: “I tend to ask … because …”</span></button>
+        </div>
+        <div class="scenario-box" aria-live="polite">
+          <div>
+            <div class="scenario-label">Fiction-first scenario</div>
+            <p id="scenarioText">A cousin tells you they might change schools and asks you not to tell anyone.</p>
+          </div>
+          <button class="btn btn-secondary btn-small" id="newScenario">New scenario</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vocabulary" data-mission="2">
+    <div class="wrap sec-layout">
+      <div class="sec-side">
+        <div class="sec-no">2 · Words for trust</div>
+        <h2>Say more than “good” or “bad”.</h2>
+        <p>Tap each word for Turkish support and a natural English example. Then use five words to retell the lesson story.</p>
+        <span class="scribble">all words are active → use them aloud</span><br>
+        <button class="btn btn-secondary complete-btn" data-complete="2">Mark mission complete</button>
+      </div>
+      <div>
+        <div class="vocab-toolbar">
+          <p><strong>15 useful words and phrases</strong></p>
+          <button class="btn btn-secondary btn-small" id="flipAll">Reveal all</button>
+        </div>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="lined" data-mission="3">
+    <div class="wrap">
+      <div class="sec-layout" style="margin-bottom:34px">
+        <div class="sec-side">
+          <div class="sec-no">3 · Read the story</div>
+          <h2>The message that travelled.</h2>
+          <p>Read like you are inside the chat. Then check who said what—and why it mattered.</p>
+          <button class="btn btn-secondary complete-btn" data-complete="3">Mark mission complete</button>
+        </div>
+        <div class="safe-note"><strong>Reading focus:</strong> Notice the difference between the original intention, the action, and the result.</div>
+      </div>
+      <div class="story-layout">
+        <article class="paper-note">
+          <div class="story-tools">
+            <h3>Family chat · Tuesday</h3>
+            <button class="btn btn-secondary btn-small" id="listenStory">Listen</button>
+          </div>
+          <div id="storyText">
+            <div class="chat"><div class="who">Deniz <span class="time">09:14</span></div><p class="msg">Ece, can I tell you something? I might move to another school next term. Please keep it between us. I want to tell Arda myself.</p></div>
+            <div class="chat"><div class="who ece">Ece <span class="time">09:16</span></div><p class="msg">Of course. I won’t tell anyone. We’ll figure it out together.</p></div>
+            <div class="chat"><div class="who maya">Maya <span class="time">09:28</span></div><p class="msg">Ece, why do you look worried? Is everything okay?</p></div>
+            <div class="chat"><div class="who ece">Ece <span class="time">09:29</span></div><p class="msg">Deniz might move schools—but please don’t say anything. I only told you because I needed advice.</p></div>
+            <div class="chat"><div class="who maya">Maya <span class="time">09:35</span></div><p class="msg">I’m sorry. Arda already knows. I let it slip when he asked why Deniz was upset.</p></div>
+            <div class="chat"><div class="who">Deniz <span class="time">09:40</span></div><p class="msg">Arda just called me. I wish I had told him myself. Ece, I trusted you. Now I feel embarrassed and disappointed.</p></div>
+            <div class="chat"><div class="who ece">Ece <span class="time">09:42</span></div><p class="msg">You’re right. I regret telling Maya. I should have kept my word. Can we talk after school?</p></div>
+          </div>
+          <div class="story-end">P.S. A secret can travel faster than we expect.</div>
+        </article>
+        <div class="quiz">
+          <h3>Comprehension check</h3>
+          <form id="storyQuiz">
+            <fieldset class="qitem" data-answer="0">
+              <legend>1. What might change for Deniz?</legend>
+              <label class="choice"><input type="radio" name="q1" value="0"> He may move to a different school.</label>
+              <label class="choice"><input type="radio" name="q1" value="1"> He may move to another city.</label>
+              <label class="choice"><input type="radio" name="q1" value="2"> He may leave his football team.</label>
+            </fieldset>
+            <fieldset class="qitem" data-answer="1">
+              <legend>2. Why does Ece tell Maya?</legend>
+              <label class="choice"><input type="radio" name="q2" value="0"> She wants to make Deniz angry.</label>
+              <label class="choice"><input type="radio" name="q2" value="1"> She wants advice because she is worried.</label>
+              <label class="choice"><input type="radio" name="q2" value="2"> She thinks everyone already knows.</label>
+            </fieldset>
+            <fieldset class="qitem" data-answer="2">
+              <legend>3. How does the secret reach Arda?</legend>
+              <label class="choice"><input type="radio" name="q3" value="0"> Deniz tells him in a message.</label>
+              <label class="choice"><input type="radio" name="q3" value="1"> Ece tells him on purpose.</label>
+              <label class="choice"><input type="radio" name="q3" value="2"> Maya lets it slip.</label>
+            </fieldset>
+            <fieldset class="qitem" data-answer="2">
+              <legend>4. Which feeling is NOT mentioned by Deniz?</legend>
+              <label class="choice"><input type="radio" name="q4" value="0"> Embarrassed</label>
+              <label class="choice"><input type="radio" name="q4" value="1"> Disappointed</label>
+              <label class="choice"><input type="radio" name="q4" value="2"> Relieved</label>
+            </fieldset>
+            <button type="button" class="btn btn-primary btn-small" id="checkStory">Check my answers</button>
+            <div class="feedback" id="storyFeedback" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="language" data-mission="4">
+    <div class="wrap sec-layout">
+      <div class="sec-side">
+        <div class="sec-no">4 · Wish or regret?</div>
+        <h2>Imagine a different reality.</h2>
+        <p>Choose the time first. Are you unhappy about now, looking back at the past, or naming the action you regret?</p>
+        <div class="safe-note"><strong>Turkish shortcut:</strong> “Keşke…” usually leads to <em>I wish…</em>; “...dığıma pişmanım” often leads to <em>I regret + -ing</em>.</div>
+        <button class="btn btn-secondary complete-btn" data-complete="4">Mark mission complete</button>
+      </div>
+      <div>
+        <div class="language-rail">
+          <div class="language-lane">
+            <span class="lane-tag">Present wish</span>
+            <div class="formula">I wish + past simple</div>
+            <p><strong>I wish you trusted me.</strong></p>
+            <p>= I want you to trust me now.</p>
+            <p class="tr-note">Keşke bana güvenseydin / güveniyor olsaydın.</p>
+          </div>
+          <div class="language-lane">
+            <span class="lane-tag">Past regret</span>
+            <div class="formula">I wish + past perfect</div>
+            <p><strong>I wish I had told Arda.</strong></p>
+            <p>= I didn’t tell him, and I regret it.</p>
+            <p class="tr-note">Keşke Arda’ya söylemiş olsaydım.</p>
+          </div>
+          <div class="language-lane">
+            <span class="lane-tag">General regret</span>
+            <div class="formula">regret + -ing / noun</div>
+            <p><strong>I regret telling Maya.</strong></p>
+            <p><strong>I regret my decision.</strong></p>
+            <p class="tr-note">Maya’ya söylediğime pişmanım.</p>
+          </div>
+        </div>
+        <div class="practice-sheet" id="grammarPractice"></div>
+        <div class="final-actions">
+          <button class="btn btn-primary btn-small" id="checkGrammar">Check 8 answers</button>
+          <button class="btn btn-secondary btn-small" id="resetGrammar">Try again</button>
+          <span class="feedback" id="grammarFeedback" role="status"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="practice" class="lined" data-mission="5">
+    <div class="wrap sec-layout">
+      <div class="sec-side">
+        <div class="sec-no">5 · Secrets in natural English</div>
+        <h2>Build the phrase, not just the word.</h2>
+        <p>Learn the chunks, match the meanings, then choose two and create your own fictional example.</p>
+        <button class="btn btn-secondary complete-btn" data-complete="5">Mark mission complete</button>
+      </div>
+      <div>
+        <div class="idiom-grid">
+          <div class="idiom"><b>keep it between us</b><span>Do not share this information with other people.</span></div>
+          <div class="idiom"><b>let it slip</b><span>Reveal something accidentally.</span></div>
+          <div class="idiom"><b>keep your word</b><span>Do what you promised to do.</span></div>
+          <div class="idiom"><b>break someone’s trust</b><span>Do something that makes a person stop trusting you.</span></div>
+          <div class="idiom"><b>own up to a mistake</b><span>Admit honestly that you did something wrong.</span></div>
+          <div class="idiom"><b>make it right</b><span>Repair the harm caused by a mistake.</span></div>
+        </div>
+        <div class="match-area">
+          <div class="match-col">
+            <h3>Choose a phrase</h3>
+            <div id="matchWords"></div>
+          </div>
+          <div class="match-col">
+            <h3>Choose its meaning</h3>
+            <div id="matchDefs"></div>
+          </div>
+        </div>
+        <div class="feedback" id="matchFeedback" role="status"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="speak" data-mission="6">
+    <div class="wrap sec-layout">
+      <div class="sec-side">
+        <div class="sec-no">6 · Repair the friendship</div>
+        <h2>Listen. Explain. Make it right.</h2>
+        <p>Choose a role, follow the path, and speak for two minutes. Then switch roles.</p>
+        <span class="scribble">kind ≠ weak · honest ≠ cruel</span><br>
+        <button class="btn btn-secondary complete-btn" data-complete="6">Mark mission complete</button>
+      </div>
+      <div>
+        <div class="role-switch" aria-label="Choose a role">
+          <button class="btn btn-secondary" data-role="deniz" aria-pressed="true">I’ll play Deniz</button>
+          <button class="btn btn-secondary" data-role="ece" aria-pressed="false">I’ll play Ece</button>
+        </div>
+        <div class="role-stage">
+          <article class="role-card active" id="denizCard">
+            <h3>Your role · Deniz</h3>
+            <p><strong>Goal:</strong> Explain why the secret mattered and say what you need now.</p>
+            <ul>
+              <li>I was hurt because …</li>
+              <li>I wish you had …</li>
+              <li>What made you tell Maya?</li>
+              <li>Can we agree to …?</li>
+            </ul>
+          </article>
+          <div class="path" aria-label="Conversation path">
+            <div class="path-step"><b>1</b>Open</div>
+            <div class="path-step"><b>2</b>Explain</div>
+            <div class="path-step"><b>3</b>Listen</div>
+            <div class="path-step"><b>4</b>Repair</div>
+            <div class="path-step"><b>5</b>Close</div>
+          </div>
+          <article class="role-card ece" id="eceCard">
+            <h3>Your role · Ece</h3>
+            <p><strong>Goal:</strong> Apologize sincerely, explain without making excuses, and rebuild trust.</p>
+            <ul>
+              <li>I’m really sorry for …</li>
+              <li>I regret telling Maya.</li>
+              <li>I wish I had kept it to myself.</li>
+              <li>What can I do to make it right?</li>
+            </ul>
+          </article>
+        </div>
+        <div class="role-controls">
+          <div class="twist">
+            <strong>Conversation twist</strong>
+            <p id="twistText">Arda is upset that Deniz did not trust him enough to share the news.</p>
+            <button class="btn btn-secondary btn-small" id="newTwist">Draw another twist</button>
+          </div>
+          <div class="timer-box">
+            <strong>Two-minute dialogue</strong><br>
+            <span class="timer-display" id="timerDisplay">2:00</span>
+            <button class="btn btn-primary btn-small" id="timerButton">Start</button>
+            <button class="btn btn-secondary btn-small" id="timerReset">Reset</button>
+          </div>
+        </div>
+        <div class="useful-strip" aria-label="Tap to hear useful phrases">
+          <button class="phrase">I can see why you feel that way.</button>
+          <button class="phrase">I should have handled it differently.</button>
+          <button class="phrase">Thank you for being honest.</button>
+          <button class="phrase">Let’s agree on what stays private.</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="family" class="lined" data-mission="7">
+    <div class="wrap sec-layout">
+      <div class="sec-side">
+        <div class="sec-no">7 · Friends or family?</div>
+        <h2>Advice changes the story.</h2>
+        <p>Choose the strongest response. Then defend your choice with a reason and a possible result.</p>
+        <button class="btn btn-secondary complete-btn" data-complete="7">Mark mission complete</button>
+      </div>
+      <div>
+        <div class="dilemma-list">
+          <div class="dilemma"><div class="dilemma-num">1</div><p>Your sibling knows your friend is making a risky decision. Who should speak first?</p><select><option>Choose…</option><option>The sibling</option><option>The friend</option><option>A trusted adult</option><option>No one yet</option></select></div>
+          <div class="dilemma"><div class="dilemma-num">2</div><p>A friend tells you a secret that suggests they are unsafe. Should the secret stay private?</p><select><option>Choose…</option><option>Yes, always</option><option>No—tell a trusted adult</option><option>Wait one week</option><option>Ask another friend</option></select></div>
+          <div class="dilemma"><div class="dilemma-num">3</div><p>Your cousin shared your news without asking. What should happen before you forgive them?</p><select><option>Choose…</option><option>A sincere apology</option><option>A clear explanation</option><option>A repair action</option><option>All three</option></select></div>
+          <div class="dilemma"><div class="dilemma-num">4</div><p>You gave poor advice and now regret it. What would you say?</p><select><option>Choose…</option><option>I wish I knew.</option><option>I wish I had listened more carefully.</option><option>I regret to listen.</option><option>I wish I listen.</option></select></div>
+        </div>
+        <div class="debate-box">
+          <div class="debate-side">
+            <h3>“Family gives better advice.”</h3>
+            <ul><li>They know your history.</li><li>They may protect you more.</li><li>They often have more life experience.</li></ul>
+          </div>
+          <div class="debate-side">
+            <h3>“Friends understand you better.”</h3>
+            <ul><li>They share your daily life.</li><li>They may understand your generation.</li><li>It can feel easier to speak openly.</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reflect" data-mission="8">
+    <div class="wrap sec-layout">
+      <div class="sec-side">
+        <div class="sec-no">8 · Your final voice note</div>
+        <h2>Honest. Kind. Better.</h2>
+        <p>Record 60–90 seconds as a fictional character. Express a regret, make a wish, and suggest a repair.</p>
+        <div class="safe-note"><strong>Keep it fictional if you prefer.</strong> Your recording stays in this browser tab and is not uploaded.</div>
+        <button class="btn btn-secondary complete-btn" data-complete="8">Mark mission complete</button>
+      </div>
+      <div>
+        <div class="voice-shell">
+          <div class="voice-top">
+            <button class="record-btn" id="recordButton" aria-label="Start recording"></button>
+            <div>
+              <div class="voice-status" id="voiceStatus">Ready to record · up to 90 seconds</div>
+              <div class="wave" aria-hidden="true"></div>
+            </div>
+            <button class="btn btn-secondary btn-small" id="stopRecording" disabled>Stop &amp; preview</button>
+          </div>
+          <audio id="audioPlayback" controls></audio>
+          <div class="builder">
+            <label for="voiceRole">1. Choose your character</label>
+            <select id="voiceRole"><option value="Ece">Ece—the cousin who shared the news</option><option value="Deniz">Deniz—the person whose trust was broken</option><option value="Maya">Maya—the friend who let it slip</option><option value="Arda">Arda—the best friend who heard it indirectly</option></select>
+            <label for="voiceRegret">2. Name one regret</label>
+            <textarea id="voiceRegret" placeholder="I regret… / I wish I had…"></textarea>
+            <label for="voiceRepair">3. Suggest one repair</label>
+            <textarea id="voiceRepair" placeholder="To make it right, I will…"></textarea>
+          </div>
+          <div class="preview" id="voicePreview"><em>Your voice-note plan will appear here as you type.</em></div>
+          <div class="rubric">
+            <label><input type="checkbox"> I spoke clearly.</label>
+            <label><input type="checkbox"> I used <em>wish/regret</em>.</label>
+            <label><input type="checkbox"> I showed understanding.</label>
+            <label><input type="checkbox"> I suggested a solution.</label>
+          </div>
+          <div class="final-actions">
+            <button class="btn btn-primary btn-small" id="copyPlan">Copy my plan</button>
+            <button class="btn btn-secondary btn-small" id="finishLesson">Finish lesson</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<details class="answer">
+  <summary>Teacher / self-check answer key</summary>
+  <div class="answer-body">
+    <div>
+      <h3>Reading</h3>
+      <p>1 A · 2 B · 3 C · 4 C</p>
+      <h3>Grammar practice</h3>
+      <ol>
+        <li>I wish you <strong>trusted</strong> me.</li>
+        <li>I wish I <strong>had kept</strong> my promise.</li>
+        <li>She regrets <strong>telling</strong> Maya.</li>
+        <li>We wish we <strong>were</strong> closer now.</li>
+        <li>Arda wishes Deniz <strong>had called</strong> him.</li>
+        <li>I regret <strong>my decision</strong>.</li>
+        <li>Ece wishes she <strong>had asked</strong> for permission.</li>
+        <li>I wish this situation <strong>was / were</strong> easier.</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Matching</h3>
+      <p>keep it between us → keep information private; let it slip → reveal accidentally; keep your word → do what you promised; break someone’s trust → make them stop trusting you; own up → admit a mistake; make it right → repair harm.</p>
+      <h3>Teaching note</h3>
+      <p>Accept <em>was</em> and formal <em>were</em> after <em>I wish</em>. For the safety dilemma, the intended answer is to involve a trusted adult if someone may be unsafe. Do not invite learners to disclose genuine secrets.</p>
+    </div>
+  </div>
+</details>
+
+<footer>
+  <div class="wrap footrow">
+    <div><strong>LBEnglishCo · Friends &amp; Family</strong><p>Speaking-first English for real conversations.</p></div>
+    <p id="progressText">0 of 8 missions complete</p>
+  </div>
+</footer>
+<div class="done-banner" id="doneBanner" role="status">Progress saved in this browser.</div>
+
+<script>
+  const $=(s,r=document)=>r.querySelector(s);
+  const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+
+  // Accessible reading controls
+  $("#textSize").addEventListener("click",()=>{
+    document.body.classList.toggle("large-text");
+    $("#textSize").setAttribute("aria-pressed",document.body.classList.contains("large-text"));
+  });
+  $$(".prompt-row").forEach(button=>button.addEventListener("click",()=>button.classList.toggle("open")));
+
+  // Fiction-first scenario spinner
+  const scenarios=[
+    "A cousin tells you they might change schools and asks you not to tell anyone.",
+    "A friend plans a surprise party, but a family member keeps asking questions.",
+    "A character tells you they failed an important exam and feel too embarrassed to tell their parents.",
+    "Two fictional friends like the same person, but only one of them knows.",
+    "A sibling secretly applied for an art competition and wants to announce it themselves."
+  ];
+  let scenarioIndex=0;
+  $("#newScenario").addEventListener("click",()=>{
+    scenarioIndex=(scenarioIndex+1)%scenarios.length;
+    $("#scenarioText").textContent=scenarios[scenarioIndex];
+  });
+
+  // Active vocabulary
+  const vocab=[
+    ["confide in","verb phrase","güvenip sırrını paylaşmak","Deniz confided in Ece."],
+    ["keep it between us","phrase","aramızda kalsın","Please keep this between us."],
+    ["let something slip","phrase","ağzından kaçırmak","Maya let the news slip."],
+    ["break someone’s trust","phrase","birinin güvenini kırmak","Sharing it broke his trust."],
+    ["keep your word","phrase","sözünü tutmak","Ece did not keep her word."],
+    ["betray","verb","ihanet etmek / güvenini boşa çıkarmak","He felt that she had betrayed him."],
+    ["embarrassed","adjective","utanmış / mahcup","Deniz felt embarrassed."],
+    ["disappointed","adjective","hayal kırıklığına uğramış","He was disappointed in Ece."],
+    ["own up to","phrasal verb","hatasını itiraf etmek","She owned up to her mistake."],
+    ["make it right","phrase","durumu düzeltmek","She wanted to make it right."],
+    ["sincere apology","noun phrase","samimi özür","A sincere apology can help."],
+    ["set a boundary","phrase","sınır koymak","They need to set a clear boundary."],
+    ["forgive","verb","affetmek","He may forgive her with time."],
+    ["regret","verb / noun","pişman olmak / pişmanlık","I regret sharing the news."],
+    ["rebuild trust","phrase","güveni yeniden kurmak","Actions rebuild trust slowly."]
+  ];
+  vocab.forEach(v=>{
+    const b=document.createElement("button");
+    b.className="vcard";
+    b.innerHTML=`<span class="pos">${v[1]}</span><div class="word">${v[0]}</div><div class="meaning"><strong>${v[2]}</strong><br>${v[3]}</div>`;
+    b.addEventListener("click",()=>b.classList.toggle("open"));
+    $("#vocabGrid").appendChild(b);
+  });
+  let allOpen=false;
+  $("#flipAll").addEventListener("click",()=>{
+    allOpen=!allOpen;
+    $$(".vcard").forEach(c=>c.classList.toggle("open",allOpen));
+    $("#flipAll").textContent=allOpen?"Hide all":"Reveal all";
+  });
+
+  // Speech synthesis
+  let speaking=false;
+  function speak(text,button){
+    if(!("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    if(speaking){speaking=false;if(button)button.textContent="Listen";return;}
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang="en-GB";u.rate=.9;
+    speaking=true;if(button)button.textContent="Stop";
+    u.onend=u.onerror=()=>{speaking=false;if(button)button.textContent="Listen";};
+    speechSynthesis.speak(u);
+  }
+  $("#listenStory").addEventListener("click",e=>speak($("#storyText").innerText,e.currentTarget));
+  $$(".phrase").forEach(p=>p.addEventListener("click",()=>speak(p.textContent)));
+
+  // Reading quiz
+  $("#checkStory").addEventListener("click",()=>{
+    let score=0,answered=0;
+    $$("#storyQuiz .qitem").forEach(q=>{
+      const picked=$("input:checked",q);
+      if(picked){answered++;if(+picked.value===+q.dataset.answer)score++;}
+    });
+    const f=$("#storyFeedback");
+    if(answered<4){f.className="feedback no";f.textContent=`Answer all four questions first (${answered}/4 done).`;}
+    else{f.className="feedback "+(score===4?"ok":"no");f.textContent=`${score}/4 correct${score===4?" — excellent reading!":" — check the story and try once more."}`;}
+  });
+
+  // Grammar sorter
+  const grammar=[
+    ["I wish you ___ me now.","trusted","trust","had trusted"],
+    ["I wish I ___ my promise yesterday.","had kept","kept","have kept"],
+    ["She regrets ___ Maya.","telling","to tell","told"],
+    ["We wish we ___ closer now.","were","had been","are"],
+    ["Arda wishes Deniz ___ him first.","had called","called","has called"],
+    ["I regret ___.","my decision","to deciding","decide"],
+    ["Ece wishes she ___ for permission.","had asked","asks","has asked"],
+    ["I wish this situation ___ easier.","were","had been","will be"]
+  ];
+  grammar.forEach((g,i)=>{
+    const d=document.createElement("div");
+    d.className="practice-item";d.dataset.answer=g[1];
+    const opts=[...g.slice(1)].sort(()=>Math.random()-.5);
+    d.innerHTML=`<label for="g${i}">${i+1}. ${g[0]}</label><select id="g${i}"><option value="">Choose…</option>${opts.map(o=>`<option>${o}</option>`).join("")}</select>`;
+    $("#grammarPractice").appendChild(d);
+  });
+  $("#checkGrammar").addEventListener("click",()=>{
+    let score=0,answered=0;
+    $$(".practice-item").forEach(item=>{
+      const value=$("select",item).value;
+      item.classList.remove("correct","wrong");
+      if(value){answered++;item.classList.add(value===item.dataset.answer?"correct":"wrong");if(value===item.dataset.answer)score++;}
+    });
+    $("#grammarFeedback").className="feedback "+(score===8?"ok":"no");
+    $("#grammarFeedback").textContent=answered<8?`Complete all items (${answered}/8).`:`${score}/8 correct.`;
+  });
+  $("#resetGrammar").addEventListener("click",()=>{
+    $$(".practice-item").forEach(i=>{i.className="practice-item";$("select",i).value="";});
+    $("#grammarFeedback").textContent="";
+  });
+
+  // Matching phrases
+  const pairs=[
+    ["keep it between us","keep information private"],
+    ["let it slip","reveal something accidentally"],
+    ["keep your word","do what you promised"],
+    ["break someone’s trust","make someone stop trusting you"],
+    ["own up to a mistake","admit honestly that you were wrong"],
+    ["make it right","repair the harm you caused"]
+  ];
+  function shuffle(items){return [...items].sort(()=>Math.random()-.5);}
+  let selected=null,matched=0;
+  shuffle(pairs).forEach(pair=>{
+    const b=document.createElement("button");b.className="match-card";b.textContent=pair[0];b.dataset.key=pair[0];b.dataset.side="word";$("#matchWords").appendChild(b);
+  });
+  shuffle(pairs).forEach(pair=>{
+    const b=document.createElement("button");b.className="match-card";b.textContent=pair[1];b.dataset.key=pair[0];b.dataset.side="def";$("#matchDefs").appendChild(b);
+  });
+  $$(".match-card").forEach(card=>card.addEventListener("click",()=>{
+    if(card.classList.contains("matched"))return;
+    if(!selected){selected=card;card.classList.add("selected");return;}
+    if(selected===card){card.classList.remove("selected");selected=null;return;}
+    if(selected.dataset.side===card.dataset.side){selected.classList.remove("selected");selected=card;card.classList.add("selected");return;}
+    if(selected.dataset.key===card.dataset.key){
+      selected.classList.remove("selected");selected.classList.add("matched");card.classList.add("matched");matched++;
+      $("#matchFeedback").className="feedback ok";$("#matchFeedback").textContent=matched===pairs.length?"6/6 — all matched! Now say two fictional examples aloud.":`${matched}/6 matched.`;
+    }else{
+      const first=selected;first.classList.remove("selected");card.classList.add("selected");
+      $("#matchFeedback").className="feedback no";$("#matchFeedback").textContent="Not that one—try another meaning.";
+      setTimeout(()=>card.classList.remove("selected"),350);
+    }
+    selected=null;
+  }));
+
+  // Role play
+  $$("[data-role]").forEach(b=>b.addEventListener("click",()=>{
+    $$("[data-role]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+    $("#denizCard").classList.toggle("active",b.dataset.role==="deniz");
+    $("#eceCard").classList.toggle("active",b.dataset.role==="ece");
+  }));
+  const twists=[
+    "Arda is upset that Deniz did not trust him enough to share the news.",
+    "Maya joins the conversation and wants to apologize too.",
+    "Ece says she told Maya because she was genuinely worried about Deniz.",
+    "Deniz’s parent has now heard the news from someone else.",
+    "Ece has defended Deniz in the past and asks for a second chance."
+  ];
+  let twistIndex=0;
+  $("#newTwist").addEventListener("click",()=>{twistIndex=(twistIndex+1)%twists.length;$("#twistText").textContent=twists[twistIndex];});
+  let seconds=120,timer=null;
+  function drawTimer(){const m=Math.floor(seconds/60),s=String(seconds%60).padStart(2,"0");$("#timerDisplay").textContent=`${m}:${s}`;}
+  $("#timerButton").addEventListener("click",()=>{
+    if(timer){clearInterval(timer);timer=null;$("#timerButton").textContent="Continue";return;}
+    $("#timerButton").textContent="Pause";
+    timer=setInterval(()=>{seconds--;drawTimer();if(seconds<=0){clearInterval(timer);timer=null;$("#timerButton").textContent="Done!";speak("Time. Finish your final sentence.");}},1000);
+  });
+  $("#timerReset").addEventListener("click",()=>{clearInterval(timer);timer=null;seconds=120;drawTimer();$("#timerButton").textContent="Start";});
+
+  // Voice-note plan
+  function buildVoicePlan(){
+    const role=$("#voiceRole").value,regret=$("#voiceRegret").value.trim(),repair=$("#voiceRepair").value.trim();
+    $("#voicePreview").innerHTML=(regret||repair)
+      ?`<strong>${role}’s voice note:</strong> I want to explain what happened. ${regret||"<em>Add a regret.</em>"} ${repair||"<em>Add a repair.</em>"} I hope we can rebuild trust.`
+      :"<em>Your voice-note plan will appear here as you type.</em>";
+  }
+  ["voiceRole","voiceRegret","voiceRepair"].forEach(id=>$("#"+id).addEventListener("input",buildVoicePlan));
+  $("#copyPlan").addEventListener("click",async()=>{
+    const text=$("#voicePreview").innerText;
+    try{await navigator.clipboard.writeText(text);$("#copyPlan").textContent="Copied ✓";}
+    catch{const area=document.createElement("textarea");area.value=text;document.body.appendChild(area);area.select();document.execCommand("copy");area.remove();$("#copyPlan").textContent="Copied ✓";}
+    setTimeout(()=>$("#copyPlan").textContent="Copy my plan",1300);
+  });
+
+  // In-browser recording, with graceful local-file fallback
+  let recorder=null,chunks=[],recordTimeout=null;
+  $("#recordButton").addEventListener("click",async()=>{
+    if(recorder&&recorder.state==="recording"){stopVoice();return;}
+    if(!navigator.mediaDevices?.getUserMedia){
+      $("#voiceStatus").textContent="Microphone recording is unavailable here. Use the 90-second speaking timer and your plan.";
+      return;
+    }
+    try{
+      const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+      chunks=[];recorder=new MediaRecorder(stream);
+      recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};
+      recorder.onstop=()=>{
+        const blob=new Blob(chunks,{type:recorder.mimeType||"audio/webm"});
+        const audio=$("#audioPlayback");audio.src=URL.createObjectURL(blob);audio.style.display="block";
+        stream.getTracks().forEach(t=>t.stop());
+        $("#voiceStatus").textContent="Recording ready. Listen, reflect, and try again if needed.";
+      };
+      recorder.start();$("#recordButton").classList.add("recording");$("#stopRecording").disabled=false;$("#voiceStatus").textContent="Recording… speak for 60–90 seconds.";recordTimeout=setTimeout(stopVoice,90000);
+    }catch{$("#voiceStatus").textContent="Microphone permission was not granted. You can still use the speaking plan and timer.";}
+  });
+  function stopVoice(){
+    if(recorder&&recorder.state==="recording")recorder.stop();
+    clearTimeout(recordTimeout);$("#recordButton").classList.remove("recording");$("#stopRecording").disabled=true;
+  }
+  $("#stopRecording").addEventListener("click",stopVoice);
+
+  // Mission progress (local only)
+  const storeKey="belinay-friends-family-progress-v1";
+  let completed=[];
+  try{completed=JSON.parse(localStorage.getItem(storeKey)||"[]");}catch{completed=[];}
+  function updateProgress(){
+    completed=[...new Set(completed)].filter(n=>n>=1&&n<=8);
+    const pct=completed.length/8*100;
+    $("#progressFill").style.width=pct+"%";
+    $("#progressText").textContent=`${completed.length} of 8 missions complete`;
+    $$("[data-complete]").forEach(b=>{
+      const done=completed.includes(+b.dataset.complete);b.classList.toggle("done",done);b.textContent=done?"Mission complete":"Mark mission complete";
+    });
+    try{localStorage.setItem(storeKey,JSON.stringify(completed));}catch{}
+  }
+  $$("[data-complete]").forEach(b=>b.addEventListener("click",()=>{
+    const n=+b.dataset.complete;
+    completed=completed.includes(n)?completed.filter(x=>x!==n):[...completed,n];
+    updateProgress();$("#doneBanner").classList.add("show");setTimeout(()=>$("#doneBanner").classList.remove("show"),1600);
+  }));
+  $("#finishLesson").addEventListener("click",()=>{
+    completed=[1,2,3,4,5,6,7,8];updateProgress();
+    $("#doneBanner").textContent="Lesson complete—well done!";$("#doneBanner").classList.add("show");setTimeout(()=>$("#doneBanner").classList.remove("show"),2600);
+  });
+  updateProgress();
+
+  // Current nav state
+  const navMap={story:"#story",language:"#language",practice:"#practice",speak:"#speak",reflect:"#reflect"};
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(!entry.isIntersecting)return;
+      $$(".lesson-nav a").forEach(a=>a.classList.toggle("active",a.getAttribute("href")===navMap[entry.target.id]));
+    });
+  },{rootMargin:"-30% 0px -60% 0px"});
+  ["story","language","practice","speak","reflect"].forEach(id=>observer.observe($("#"+id)));
+</script>
+</body>
+</html>
